@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12AEC8B4D21BAF816D70FF4C /* Pods_EugeneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2970891414CB8689F56C2D /* Pods_EugeneTests.framework */; };
+		506482941ED78D9300DDAC5B /* AI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506482931ED78D9300DDAC5B /* AI.framework */; };
+		506482961ED7A79400DDAC5B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506482951ED7A79400DDAC5B /* AVFoundation.framework */; };
+		5064829D1ED7AFE000DDAC5B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5064829C1ED7AFE000DDAC5B /* AudioToolbox.framework */; };
+		5064E6DF1ED760820007B474 /* UICountingLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5064E6DE1ED760820007B474 /* UICountingLabel.framework */; };
+		50871FB61ED71EBA00EBCF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50871FB51ED71EBA00EBCF34 /* AppDelegate.swift */; };
+		50871FB81ED71EBA00EBCF34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50871FB71ED71EBA00EBCF34 /* ViewController.swift */; };
+		50871FBB1ED71EBA00EBCF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50871FB91ED71EBA00EBCF34 /* Main.storyboard */; };
+		50871FBD1ED71EBA00EBCF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50871FBC1ED71EBA00EBCF34 /* Assets.xcassets */; };
+		50871FC01ED71EBA00EBCF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50871FBE1ED71EBA00EBCF34 /* LaunchScreen.storyboard */; };
+		50871FCB1ED71EBA00EBCF34 /* EugeneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50871FCA1ED71EBA00EBCF34 /* EugeneTests.swift */; };
+		50871FD61ED71EBA00EBCF34 /* EugeneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50871FD51ED71EBA00EBCF34 /* EugeneUITests.swift */; };
+		7CE55329095CAA1CF47AF90B /* Pods_EugeneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8337F31FAD17A25B75C25F /* Pods_EugeneUITests.framework */; };
+		D8BDC9C0B3FB771167D22C94 /* Pods_Eugene.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C31FD7057B57418AE1741DC9 /* Pods_Eugene.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50871FC71ED71EBA00EBCF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50871FAA1ED71EBA00EBCF34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50871FB11ED71EBA00EBCF34;
+			remoteInfo = Eugene;
+		};
+		50871FD21ED71EBA00EBCF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50871FAA1ED71EBA00EBCF34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50871FB11ED71EBA00EBCF34;
+			remoteInfo = Eugene;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		196F3ACF0C8D1DC09EC5A512 /* Pods-Eugene.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eugene.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eugene/Pods-Eugene.release.xcconfig"; sourceTree = "<group>"; };
+		3E84686BAE82DBE3F45E5F95 /* Pods-EugeneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EugeneTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EugeneTests/Pods-EugeneTests.debug.xcconfig"; sourceTree = "<group>"; };
+		506482931ED78D9300DDAC5B /* AI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AI.framework; path = "../../Library/Developer/Xcode/DerivedData/Eugene-ehskljwwooihcjczriokugjuviok/Build/Products/Debug-iphoneos/AI/AI.framework"; sourceTree = "<group>"; };
+		506482951ED7A79400DDAC5B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5064829B1ED7AFCE00DDAC5B /* Eugene.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Eugene.entitlements; sourceTree = "<group>"; };
+		5064829C1ED7AFE000DDAC5B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5064E6DE1ED760820007B474 /* UICountingLabel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICountingLabel.framework; path = "Pods/../build/Debug-iphoneos/UICountingLabel/UICountingLabel.framework"; sourceTree = "<group>"; };
+		50871FB21ED71EBA00EBCF34 /* Eugene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eugene.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50871FB51ED71EBA00EBCF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50871FB71ED71EBA00EBCF34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50871FBA1ED71EBA00EBCF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50871FBC1ED71EBA00EBCF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50871FBF1ED71EBA00EBCF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50871FC11ED71EBA00EBCF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50871FC61ED71EBA00EBCF34 /* EugeneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EugeneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50871FCA1ED71EBA00EBCF34 /* EugeneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EugeneTests.swift; sourceTree = "<group>"; };
+		50871FCC1ED71EBA00EBCF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50871FD11ED71EBA00EBCF34 /* EugeneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EugeneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50871FD51ED71EBA00EBCF34 /* EugeneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EugeneUITests.swift; sourceTree = "<group>"; };
+		50871FD71ED71EBA00EBCF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BEBD8DC7E7E508D9A9C3737 /* Pods-EugeneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EugeneTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EugeneTests/Pods-EugeneTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E8337F31FAD17A25B75C25F /* Pods_EugeneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EugeneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		798CE1C213C11970719A4C2D /* Pods-Eugene.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eugene.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eugene/Pods-Eugene.debug.xcconfig"; sourceTree = "<group>"; };
+		AB634C9503B265DC54DE3B5E /* Pods-EugeneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EugeneUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EugeneUITests/Pods-EugeneUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C31FD7057B57418AE1741DC9 /* Pods_Eugene.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eugene.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1756686B90E508A12B687C9 /* Pods-EugeneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EugeneUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EugeneUITests/Pods-EugeneUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FF2970891414CB8689F56C2D /* Pods_EugeneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EugeneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50871FAF1ED71EBA00EBCF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				506482961ED7A79400DDAC5B /* AVFoundation.framework in Frameworks */,
+				506482941ED78D9300DDAC5B /* AI.framework in Frameworks */,
+				5064829D1ED7AFE000DDAC5B /* AudioToolbox.framework in Frameworks */,
+				5064E6DF1ED760820007B474 /* UICountingLabel.framework in Frameworks */,
+				D8BDC9C0B3FB771167D22C94 /* Pods_Eugene.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50871FC31ED71EBA00EBCF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12AEC8B4D21BAF816D70FF4C /* Pods_EugeneTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50871FCE1ED71EBA00EBCF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE55329095CAA1CF47AF90B /* Pods_EugeneUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041B836BB5AD4490848F593C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5064829C1ED7AFE000DDAC5B /* AudioToolbox.framework */,
+				506482951ED7A79400DDAC5B /* AVFoundation.framework */,
+				506482931ED78D9300DDAC5B /* AI.framework */,
+				5064E6DE1ED760820007B474 /* UICountingLabel.framework */,
+				C31FD7057B57418AE1741DC9 /* Pods_Eugene.framework */,
+				FF2970891414CB8689F56C2D /* Pods_EugeneTests.framework */,
+				5E8337F31FAD17A25B75C25F /* Pods_EugeneUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50871FA91ED71EBA00EBCF34 = {
+			isa = PBXGroup;
+			children = (
+				50871FB41ED71EBA00EBCF34 /* Eugene */,
+				50871FC91ED71EBA00EBCF34 /* EugeneTests */,
+				50871FD41ED71EBA00EBCF34 /* EugeneUITests */,
+				50871FB31ED71EBA00EBCF34 /* Products */,
+				DE2AF63A32AC5D8A9CB08D74 /* Pods */,
+				041B836BB5AD4490848F593C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		50871FB31ED71EBA00EBCF34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50871FB21ED71EBA00EBCF34 /* Eugene.app */,
+				50871FC61ED71EBA00EBCF34 /* EugeneTests.xctest */,
+				50871FD11ED71EBA00EBCF34 /* EugeneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50871FB41ED71EBA00EBCF34 /* Eugene */ = {
+			isa = PBXGroup;
+			children = (
+				5064829B1ED7AFCE00DDAC5B /* Eugene.entitlements */,
+				50871FB51ED71EBA00EBCF34 /* AppDelegate.swift */,
+				50871FB71ED71EBA00EBCF34 /* ViewController.swift */,
+				50871FB91ED71EBA00EBCF34 /* Main.storyboard */,
+				50871FBC1ED71EBA00EBCF34 /* Assets.xcassets */,
+				50871FBE1ED71EBA00EBCF34 /* LaunchScreen.storyboard */,
+				50871FC11ED71EBA00EBCF34 /* Info.plist */,
+			);
+			path = Eugene;
+			sourceTree = "<group>";
+		};
+		50871FC91ED71EBA00EBCF34 /* EugeneTests */ = {
+			isa = PBXGroup;
+			children = (
+				50871FCA1ED71EBA00EBCF34 /* EugeneTests.swift */,
+				50871FCC1ED71EBA00EBCF34 /* Info.plist */,
+			);
+			path = EugeneTests;
+			sourceTree = "<group>";
+		};
+		50871FD41ED71EBA00EBCF34 /* EugeneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50871FD51ED71EBA00EBCF34 /* EugeneUITests.swift */,
+				50871FD71ED71EBA00EBCF34 /* Info.plist */,
+			);
+			path = EugeneUITests;
+			sourceTree = "<group>";
+		};
+		DE2AF63A32AC5D8A9CB08D74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				798CE1C213C11970719A4C2D /* Pods-Eugene.debug.xcconfig */,
+				196F3ACF0C8D1DC09EC5A512 /* Pods-Eugene.release.xcconfig */,
+				3E84686BAE82DBE3F45E5F95 /* Pods-EugeneTests.debug.xcconfig */,
+				5BEBD8DC7E7E508D9A9C3737 /* Pods-EugeneTests.release.xcconfig */,
+				AB634C9503B265DC54DE3B5E /* Pods-EugeneUITests.debug.xcconfig */,
+				F1756686B90E508A12B687C9 /* Pods-EugeneUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50871FB11ED71EBA00EBCF34 /* Eugene */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50871FDA1ED71EBA00EBCF34 /* Build configuration list for PBXNativeTarget "Eugene" */;
+			buildPhases = (
+				90C9ACAF5D4DA10D79627655 /* [CP] Check Pods Manifest.lock */,
+				50871FAE1ED71EBA00EBCF34 /* Sources */,
+				50871FAF1ED71EBA00EBCF34 /* Frameworks */,
+				50871FB01ED71EBA00EBCF34 /* Resources */,
+				EE72C4E29FA09B87DE038B9F /* [CP] Embed Pods Frameworks */,
+				2DDD80757418F8D721EB6734 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Eugene;
+			productName = Eugene;
+			productReference = 50871FB21ED71EBA00EBCF34 /* Eugene.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50871FC51ED71EBA00EBCF34 /* EugeneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50871FDD1ED71EBA00EBCF34 /* Build configuration list for PBXNativeTarget "EugeneTests" */;
+			buildPhases = (
+				5FFDF7010D8E989B3334CF85 /* [CP] Check Pods Manifest.lock */,
+				50871FC21ED71EBA00EBCF34 /* Sources */,
+				50871FC31ED71EBA00EBCF34 /* Frameworks */,
+				50871FC41ED71EBA00EBCF34 /* Resources */,
+				188AD3293EDD4B24D9B2D251 /* [CP] Embed Pods Frameworks */,
+				459F6CDECA181F33BEB547F2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50871FC81ED71EBA00EBCF34 /* PBXTargetDependency */,
+			);
+			name = EugeneTests;
+			productName = EugeneTests;
+			productReference = 50871FC61ED71EBA00EBCF34 /* EugeneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50871FD01ED71EBA00EBCF34 /* EugeneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50871FE01ED71EBA00EBCF34 /* Build configuration list for PBXNativeTarget "EugeneUITests" */;
+			buildPhases = (
+				7BA0D701E5BDAFB0A0E9DC69 /* [CP] Check Pods Manifest.lock */,
+				50871FCD1ED71EBA00EBCF34 /* Sources */,
+				50871FCE1ED71EBA00EBCF34 /* Frameworks */,
+				50871FCF1ED71EBA00EBCF34 /* Resources */,
+				E074E8336766EB69829CE687 /* [CP] Embed Pods Frameworks */,
+				487B54810A9896DE20451FCB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50871FD31ED71EBA00EBCF34 /* PBXTargetDependency */,
+			);
+			name = EugeneUITests;
+			productName = EugeneUITests;
+			productReference = 50871FD11ED71EBA00EBCF34 /* EugeneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50871FAA1ED71EBA00EBCF34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jeffrey Li";
+				TargetAttributes = {
+					50871FB11ED71EBA00EBCF34 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5CSKKUU34K;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+						};
+					};
+					50871FC51ED71EBA00EBCF34 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5CSKKUU34K;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 50871FB11ED71EBA00EBCF34;
+					};
+					50871FD01ED71EBA00EBCF34 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5CSKKUU34K;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 50871FB11ED71EBA00EBCF34;
+					};
+				};
+			};
+			buildConfigurationList = 50871FAD1ED71EBA00EBCF34 /* Build configuration list for PBXProject "Eugene" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50871FA91ED71EBA00EBCF34;
+			productRefGroup = 50871FB31ED71EBA00EBCF34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50871FB11ED71EBA00EBCF34 /* Eugene */,
+				50871FC51ED71EBA00EBCF34 /* EugeneTests */,
+				50871FD01ED71EBA00EBCF34 /* EugeneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50871FB01ED71EBA00EBCF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50871FC01ED71EBA00EBCF34 /* LaunchScreen.storyboard in Resources */,
+				50871FBD1ED71EBA00EBCF34 /* Assets.xcassets in Resources */,
+				50871FBB1ED71EBA00EBCF34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50871FC41ED71EBA00EBCF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50871FCF1ED71EBA00EBCF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		188AD3293EDD4B24D9B2D251 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EugeneTests/Pods-EugeneTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DDD80757418F8D721EB6734 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eugene/Pods-Eugene-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		459F6CDECA181F33BEB547F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EugeneTests/Pods-EugeneTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		487B54810A9896DE20451FCB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EugeneUITests/Pods-EugeneUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FFDF7010D8E989B3334CF85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7BA0D701E5BDAFB0A0E9DC69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		90C9ACAF5D4DA10D79627655 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E074E8336766EB69829CE687 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EugeneUITests/Pods-EugeneUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE72C4E29FA09B87DE038B9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eugene/Pods-Eugene-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50871FAE1ED71EBA00EBCF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50871FB81ED71EBA00EBCF34 /* ViewController.swift in Sources */,
+				50871FB61ED71EBA00EBCF34 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50871FC21ED71EBA00EBCF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50871FCB1ED71EBA00EBCF34 /* EugeneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50871FCD1ED71EBA00EBCF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50871FD61ED71EBA00EBCF34 /* EugeneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50871FC81ED71EBA00EBCF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50871FB11ED71EBA00EBCF34 /* Eugene */;
+			targetProxy = 50871FC71ED71EBA00EBCF34 /* PBXContainerItemProxy */;
+		};
+		50871FD31ED71EBA00EBCF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50871FB11ED71EBA00EBCF34 /* Eugene */;
+			targetProxy = 50871FD21ED71EBA00EBCF34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50871FB91ED71EBA00EBCF34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50871FBA1ED71EBA00EBCF34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50871FBE1ED71EBA00EBCF34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50871FBF1ED71EBA00EBCF34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50871FD81ED71EBA00EBCF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50871FD91ED71EBA00EBCF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50871FDB1ED71EBA00EBCF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 798CE1C213C11970719A4C2D /* Pods-Eugene.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Eugene/Eugene.entitlements;
+				DEVELOPMENT_TEAM = 5CSKKUU34K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/UICountingLabel",
+				);
+				INFOPLIST_FILE = Eugene/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xchange.Eugene;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		50871FDC1ED71EBA00EBCF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196F3ACF0C8D1DC09EC5A512 /* Pods-Eugene.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Eugene/Eugene.entitlements;
+				DEVELOPMENT_TEAM = 5CSKKUU34K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/UICountingLabel",
+				);
+				INFOPLIST_FILE = Eugene/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xchange.Eugene;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		50871FDE1ED71EBA00EBCF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E84686BAE82DBE3F45E5F95 /* Pods-EugeneTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5CSKKUU34K;
+				INFOPLIST_FILE = EugeneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xchange.EugeneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eugene.app/Eugene";
+			};
+			name = Debug;
+		};
+		50871FDF1ED71EBA00EBCF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BEBD8DC7E7E508D9A9C3737 /* Pods-EugeneTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5CSKKUU34K;
+				INFOPLIST_FILE = EugeneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xchange.EugeneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eugene.app/Eugene";
+			};
+			name = Release;
+		};
+		50871FE11ED71EBA00EBCF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB634C9503B265DC54DE3B5E /* Pods-EugeneUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5CSKKUU34K;
+				INFOPLIST_FILE = EugeneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xchange.EugeneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Eugene;
+			};
+			name = Debug;
+		};
+		50871FE21ED71EBA00EBCF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1756686B90E508A12B687C9 /* Pods-EugeneUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5CSKKUU34K;
+				INFOPLIST_FILE = EugeneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Xchange.EugeneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Eugene;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50871FAD1ED71EBA00EBCF34 /* Build configuration list for PBXProject "Eugene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50871FD81ED71EBA00EBCF34 /* Debug */,
+				50871FD91ED71EBA00EBCF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50871FDA1ED71EBA00EBCF34 /* Build configuration list for PBXNativeTarget "Eugene" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50871FDB1ED71EBA00EBCF34 /* Debug */,
+				50871FDC1ED71EBA00EBCF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50871FDD1ED71EBA00EBCF34 /* Build configuration list for PBXNativeTarget "EugeneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50871FDE1ED71EBA00EBCF34 /* Debug */,
+				50871FDF1ED71EBA00EBCF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50871FE01ED71EBA00EBCF34 /* Build configuration list for PBXNativeTarget "EugeneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50871FE11ED71EBA00EBCF34 /* Debug */,
+				50871FE21ED71EBA00EBCF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50871FAA1ED71EBA00EBCF34 /* Project object */;
+}

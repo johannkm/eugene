@@ -1,0 +1,18 @@
+PODS:
+  - AI (0.0.8)
+  - SACountingLabel (0.1.1)
+  - UICountingLabel (1.4.0)
+
+DEPENDENCIES:
+  - AI
+  - SACountingLabel
+  - UICountingLabel
+
+SPEC CHECKSUMS:
+  AI: 73c9a26daeb5362016fd345a2d0ee346919a526f
+  SACountingLabel: 6b0c2a177b77e65ea63772e50f4d4285bb6d5a71
+  UICountingLabel: ed5ce5b6d5ef278ff40d99cfa49577a30ab0c87b
+
+PODFILE CHECKSUM: 6d2fc1cd42eb9e51981941dbf4827915c87e3b52
+
+COCOAPODS: 1.2.1

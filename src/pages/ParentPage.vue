@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <div class="container has-text-centered">
 
       <p>Your child has:</p>
@@ -41,7 +41,12 @@
 
       </form>
 
-
+      <br>
+      <a href="/#/analysis">
+        <span class="tag is-medium">
+          <strong >Analyze</strong>
+        </span>
+      </a>
 
       <table v-if="$store.state.transactions.length>0" class="table is-bordered is-striped" style="margin-top:2em">
         <thead>
@@ -65,8 +70,6 @@
 
 <script>
 import axios from 'axios'
-var io = require('socket.io-client')
-var socket = io.connect('http://d4a3ebcd.ngrok.io')
 
 
 
@@ -136,5 +139,11 @@ div.container {
 
 :disabled {
     background-color: #000
+}
+
+.gradient{
+	background-color: #42275a;
+  background-image: linear-gradient(#42275a, #734b6d);
+  background: linear-gradient(#42275a, #734b6d);
 }
 </style>

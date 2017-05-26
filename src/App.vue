@@ -1,6 +1,6 @@
 <template>
-  <div id="app" class="container has-text-centered">
-    <img src="https://image.ibb.co/drQGJF/eugene.png" alt="" class="header" style="height: 50px; padding-bottom:1em;">
+  <div id="app" class=" has-text-centered">
+    <!-- <img src="https://image.ibb.co/drQGJF/eugene.png" alt="" class="header" style="height: 50px; padding-bottom:1em;"> -->
     <router-view></router-view>
   </div>
 </template>
@@ -14,7 +14,7 @@ export default {
 <style>
 
 div.container {
-  padding: 8px;
+  /*padding: 8px;*/
 }
 
 </style>

@@ -33,8 +33,6 @@
 
 <script>
 import axios from 'axios'
-var io = require('socket.io-client')
-var socket = io.connect('http://d4a3ebcd.ngrok.io')
 
 
 

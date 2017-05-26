@@ -9,12 +9,17 @@ import store from './store/store';
 Vue.use(Router)
 
 const routes = [
-  { name: 'main', path: '/', component: MainPage },
-  { name: 'seeds', path: '/seeds', component: SeedsPage }
+  { name: 'Piggy Parent', path: '/', component: MainPage },
+  { name: 'Piggy Seeds', path: '/seeds', component: SeedsPage }
 ]
 
 const router = new Router({
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = to.name
+  next()
 })
 
 const app = new Vue({

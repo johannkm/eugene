@@ -83,7 +83,7 @@ export default {
         var amount = this.transactionForm.balance
         var message = this.transactionForm.message
         console.log('posting ' + this.transactionForm.balance + ' ' + this.transactionForm.message)
-        $store.dispatch('postTransaction', {amount:amount, message:message});
+        this.$store.dispatch('postTransaction', {amount:amount, message:message});
         this.reset()
       } else{
         alert('Please enter an amount')

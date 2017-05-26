@@ -26,8 +26,8 @@ export default{
 	},
   methods:{
     dropSeed: function(message){
-      $store.dispatch('postTransaction', {amount:-sliderValue, message:message});
-      sliderValue=0
+      this.$store.dispatch('postTransaction', {amount:-this.sliderValue, message:this.message});
+      this.sliderValue=1
     }
   }
 

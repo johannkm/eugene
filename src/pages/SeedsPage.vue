@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <p>Balance:</p>
     <p class="title is-1 balance"><strong>${{$store.state.balance}}</strong></p>
     <vue-slider v-model="sliderValue" :min="1" :max="$store.state.balance"
@@ -35,6 +36,14 @@
 
     </nav>
   </transition-group>
+
+  <br><br>
+
+  <a href="/#/child">
+    <span class="tag is-large">
+      <strong>Back</strong>
+    </span>
+  </a>
 
   </div>
 </template>

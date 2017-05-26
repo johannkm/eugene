@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import ParentPage from './pages/ParentPage.vue'
+import ChildPage from './pages/ChildPage.vue'
 import SeedsPage from './pages/SeedsPage.vue'
 import Router from 'vue-router'
 import store from './store/store';
@@ -10,6 +11,7 @@ Vue.use(Router)
 
 const routes = [
   { name: 'Parent', path: '/', component: ParentPage },
+  { name: 'Child', path: '/child', component: ChildPage },
   { name: 'Seeds', path: '/seeds', component: SeedsPage }
 ]
 

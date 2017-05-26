@@ -1,5 +1,5 @@
-var socketAd = "http://bdaf605a.ngrok.io"
-var serverAd = "http://29488423.ngrok.io"
+var socketAd = "https://eugenesocket.localtunnel.me"
+var serverAd = "http://eugene-server.ngrok.io/"
 
 import Vue from 'vue'
 import Vuex from 'vuex'

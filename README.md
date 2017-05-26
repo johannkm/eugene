@@ -1,18 +1,41 @@
-# child-front
+# Eugene, a financial literacy ecosystem for kids
 
-> A Vue.js project
+
+
+## Original Repositories
+This repository is a combination of multiple repositories. Find the originals here:
+- https://github.com/kevchn/eugene-child
+- https://github.com/lijeffrey39/eugeneIOTappDisplay
+- https://github.com/lijeffrey39/nodeEugeneBot
+
+## Contributors
+- [Karl Coelho](https://github.com/karlcoelho)
+- [Kevin Chen](https://github.com/kevchn)
+- [Jeffrey Li](https://github.com/lijeffrey39)
+- [Johann Miller](https://github.com/johannkm)
+- [Vineet Shah](https://github.com/shahvineet98)
+
 
 ## Build Setup
 
 ``` bash
-# install dependencies
+# Vue SPA
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
 npm run build
+
+# Node
+cd backend
+npm install
+node app.js
+
+# open ports
+./ngrok
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Built With
+- Vue.js
+- Node.js
+- Swift
+- Chart.js
+- Socket.io
+- Nessie API

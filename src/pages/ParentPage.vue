@@ -8,28 +8,42 @@
       <form v-on:submit.prevent="postTransaction">
 
         <div class="field has-addons">
-          <p class="control is-expanded">
+
+
+          <p class="control">
             <input name="amount" class="input" type="number" placeholder="Amount" v-model="transactionForm.balance" required :disabled="waiting">
           </p>
+
+          <p class="control">
+            <span class="select">
+              <select v-model="reasonSelect">
+                <option>Allowance</option>
+                <option>Raking leaves</option>
+                <option>Taking out trash</option>
+                <option>Investing</option>
+                <option>Other</option>
+              </select>
+            </span>
+          </p>
+
           <p class="control">
             <input class="button is-primary" type="submit" value="Send" :disabled="waiting">
           </p>
         </div>
 
         <transition name="component-fade" mode="out-in">
-          <div class="field" v-if="messageExpanded">
+          <div class="field" v-if="reasonSelect=='Other'">
             <p class="control">
               <textarea name="message" class="textarea" placeholder="Message" v-model="transactionForm.message" :disabled="waiting"></textarea>
             </p>
           </div>
-          <a v-else @click="messageExpanded=true" :disabled="waiting"><small>Add message</small></a>
         </transition>
 
       </form>
 
 
 
-      <table class="table is-bordered is-striped" style="margin-top:2em">
+      <table v-if="$store.state.transactions.length>0" class="table is-bordered is-striped" style="margin-top:2em">
         <thead>
           <tr>
             <td><b>Amount</b></td>
@@ -57,7 +71,7 @@ var socket = io.connect('http://d4a3ebcd.ngrok.io')
 
 
 export default {
-  name: 'main-page',
+  name: 'parent-page',
   data () {
     return {
       balance: '',
@@ -67,7 +81,8 @@ export default {
       },
       transactions: [],
       messageExpanded: false,
-      waiting: false
+      waiting: false,
+      reasonSelect: 'Allowance'
     }
   },
   methods: {
@@ -81,8 +96,8 @@ export default {
           vm.reset()
         }, 500)
         var amount = this.transactionForm.balance
-        var message = this.transactionForm.message
-        console.log('posting ' + this.transactionForm.balance + ' ' + this.transactionForm.message)
+        var message = this.reasonSelect!='Other' ? this.reasonSelect : this.transactionForm.message
+        console.log('posting ' + amount + ' ' + message)
         this.$store.dispatch('postTransaction', {amount:amount, message:message});
         this.reset()
       } else{

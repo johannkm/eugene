@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import MainPage from './pages/MainPage.vue'
+import ParentPage from './pages/ParentPage.vue'
 import SeedsPage from './pages/SeedsPage.vue'
 import Router from 'vue-router'
 import store from './store/store';
@@ -9,8 +9,8 @@ import store from './store/store';
 Vue.use(Router)
 
 const routes = [
-  { name: 'Piggy Parent', path: '/', component: MainPage },
-  { name: 'Piggy Seeds', path: '/seeds', component: SeedsPage }
+  { name: 'Parent', path: '/', component: ParentPage },
+  { name: 'Seeds', path: '/seeds', component: SeedsPage }
 ]
 
 const router = new Router({

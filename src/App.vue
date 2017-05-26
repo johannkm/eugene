@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container has-text-centered">
-    <img src="https://image.ibb.co/drQGJF/eugene.png" alt="" style="height: 40px; padding-bottom:1em;">
+    <img src="https://image.ibb.co/drQGJF/eugene.png" alt="" class="header" style="height: 50px; padding-bottom:1em;">
     <router-view></router-view>
   </div>
 </template>

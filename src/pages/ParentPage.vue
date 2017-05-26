@@ -7,7 +7,7 @@
           <div class="tile is-parent">
             <article class="tile is-child">
             	<h6 class="subtitle is-6" style="color:#fff; margin-top: 1em">Current Balance</h6>
-            	<h4 class="title is-4" style="color:#fff"><b>${{ $store.state.balance }}.00</b></h4>
+            	<h4 class="title is-4" style="color:#fff"><b>${{ $store.state.balance }}</b></h4>
             </article>
           </div>
         </div>

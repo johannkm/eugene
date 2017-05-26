@@ -10,6 +10,10 @@ export default Doughnut.extend({
       this.chartData.datasets[0].data = newSum
       this.renderChart(this.chartData, this.options)
     }
+  },
+  mounted: function(){
+    this.chartData.datasets[0].data = this.sums
+    this.renderChart(this.chartData, this.options)
   }
 })
 

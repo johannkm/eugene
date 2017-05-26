@@ -31,7 +31,7 @@ export default {
         'July', 'August', 'September', 'October', 'November', 'December']
       var d = new Date(dateS)
       console.log(dateS)
-      return (d.getHours() + ':' + d.getMinutes() + ' ' + months[d.getMonth()] + ', ' + d.getDay() + ' ')
+      return (d.getHours() + ':' + (d.getMinutes()<10 ? '0' + d.getMinutes() : d.getMinutes()) + ' ' + months[d.getMonth()] + ', ' + d.getDay() + ' ')
     }
   }
 }

@@ -1,9 +1,19 @@
 <template>
-  <div>
-    <div class="container has-text-centered">
+  <div id="app">
+    <div class="has-text-centered">
 
-      <p>Your child has:</p>
-      <p class="title is-1 balance"><strong>${{$store.state.balance}}</strong></p>
+      <div class="gradient" style="margin-bottom:0.6em">
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child">
+            	<h6 class="subtitle is-6" style="color:#fff; margin-top: 1em">Current Balance</h6>
+            	<h4 class="title is-4" style="color:#fff"><b>${{ $store.state.balance }}.00</b></h4>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <br>
 
       <form v-on:submit.prevent="postTransaction">
 
@@ -47,19 +57,20 @@
           <strong >Analyze</strong>
         </span>
       </a>
+      <br><br>
+      <p style="background-color: #734b6d; color: white"><small>Recent Transactions</small></p>
 
-      <table v-if="$store.state.transactions.length>0" class="table is-bordered is-striped" style="margin-top:2em">
-        <thead>
-          <tr>
-            <td><b>Amount</b></td>
-            <td><b>Message</b></td>
-          </tr>
-        </thead>
+      <table class="table is-narrow is-striped">
         <tbody>
-          <tr v-for="row in $store.state.transactions">
-            <td v-if="row.value>0">${{row.value}}</td>
-            <td v-else style="color:red">-${{-row.value}}</td>
-            <td>{{row.message}}</td>
+          <tr v-for="transaction in $store.state.transactions">
+            <td style="color: #757575">
+              <strong v-if="transaction.value > 0" style="color: #00D1B2">${{ transaction.value }}.00</strong>
+              <strong v-if="transaction.value <= 0" style="color: red">${{ transaction.value }}.00</strong>
+                <br>
+              <small>{{ getDateString(transaction.date) }}</small>
+            </td>
+
+            <td>{{ transaction.message }}</td>
           </tr>
         </tbody>
       </table>
@@ -117,6 +128,13 @@ export default {
       this.transactionForm.balance = ''
       this.transactionForm.message = ''
       this.messageExpanded = false
+    },
+    getDateString: function (dateS) {
+      var months = ['January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December']
+      var d = new Date(dateS)
+      console.log(dateS)
+      return (d.getHours() + ':' + d.getMinutes() + ' ' + months[d.getMonth()] + ', ' + d.getDay() + ' ')
     }
   }
 }
@@ -140,10 +158,15 @@ div.container {
 :disabled {
     background-color: #000
 }
+</style>
+
+
+<style scoped>
 
 .gradient{
 	background-color: #42275a;
   background-image: linear-gradient(#42275a, #734b6d);
   background: linear-gradient(#42275a, #734b6d);
 }
+
 </style>

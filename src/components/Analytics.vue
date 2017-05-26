@@ -1,7 +1,7 @@
 <template>
   <div
     <div style="background-color: white">
-        <pie-chart :chartData="datas" :sums="sums" :options="{responsive: true, maintainAspectRatio: false}" style="height:20em; padding-bottom: 1.5em; padding-top: 0.2em"></pie-chart>
+        <pie-chart :chartData="datas" :sums="sums" :options="{responsive: true, maintainAspectRatio: false}" style="width:100%; padding-bottom: 1.5em; padding-top: 0.2em"></pie-chart>
     </div>
   </div>
 

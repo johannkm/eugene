@@ -1,12 +1,9 @@
-var socketAd = "https://eugenesocket.localtunnel.me"
-var serverAd = "http://eugene-server.ngrok.io/"
+var serverAd = "http://localhost:5000"
 
 import Vue from 'vue'
 import Vuex from 'vuex'
 
 import axios from 'axios'
-var io = require('socket.io-client')
-var socket = io.connect(socketAd)
 
 Vue.use(Vuex)
 
@@ -17,16 +14,27 @@ const state = {
   transactions: [],
 }
 
-socket.on('receiveMoney', function(data){
-    state.balance = data.value
-    state.transactions = data.transactions
-  })
+var getTransactions = function(){
+  axios.get(serverAd+'/payments')
+    .then(function(data){
+      state.balance = data.data.value
+      state.transactions = data.data.transactions
+    })
+    .catch(function(error){
+      console.log(error)
+    })
+}
+
+getTransactions()
+setInterval(function(){
+    getTransactions()
+  }, (10 * 1000))
 
 // actions are functions that causes side effects and can involve
 // asynchronous operations.
 const actions = {
   postTransaction (context, {amount, message}){
-    axios.get(serverAd+'/transfer',{
+    axios.post(serverAd+'/transfer',{
       params: {
         amount,
         message

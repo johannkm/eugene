@@ -12,7 +12,6 @@
     "axios": "^0.16.1",
     "chart.js": "^2.6.0",
     "chartjs": "^0.3.24",
-    "socket.io-client": "^2.0.1",
     "vue": "^2.2.1",
     "vue-chartjs": "^2.6.3",
     "vue-router": "^2.5.3",

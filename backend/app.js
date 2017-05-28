@@ -12,7 +12,6 @@ var transactions = [];
 
 var app = express();
 var server = require('http').Server(app);
-var io = require('socket.io')(server);
 
 server.listen(8080);
 app.use(bodyParser.json());
@@ -22,16 +21,12 @@ app.use(bodyParser.urlencoded({
 app.use(require('cors')());
 app.set('port', (process.env.PORT || 5000));
 
-io.on('connection', function(socket) {
-    console.log('User connected!');
-    io.emit("receiveMoney", { value: $BALANCE, transactions: transactions })
-});
 
 app.get('/payments', function(req, res) {
-    res.send(transactions);
+    res.send({ value: $BALANCE, transactions: transactions });
 });
 
-app.get('/transfer', function(req, res) {
+app.post('/transfer', function(req, res) {
     var amount = req.query.amount;
     var message = req.query.message;
 
@@ -50,7 +45,6 @@ app.get('/transfer', function(req, res) {
             $BALANCE += parseFloat(amount);
             console.log("Balance: " + $BALANCE);
             transactions.unshift({ value: parseFloat(amount), message: message, date: today  })
-            io.emit("receiveMoney", { value: $BALANCE, transactions: transactions })
         });
     res.send('success');
 });

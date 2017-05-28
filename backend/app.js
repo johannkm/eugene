@@ -55,6 +55,10 @@ app.get('/childMoney', function(req, res) {
   });
 });
 
+app.get('/', function(req, res) {
+  res.send('hello')
+});
+
 app.get('/balance', function(req, res) {
   request('http://api.reimaginebanking.com/accounts?key=' + $NESSIE_API_KEY, function(error, response, body) {
       var jsonObj = JSON.parse(body);

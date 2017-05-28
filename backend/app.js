@@ -27,8 +27,8 @@ app.get('/payments', function(req, res) {
 });
 
 app.post('/transfer', function(req, res) {
-    var amount = req.query.amount;
-    var message = req.query.message;
+    var amount = req.body.amount;
+    var message = req.body.message;
 
     var today = new Date();
 

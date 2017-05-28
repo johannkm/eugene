@@ -35,10 +35,9 @@ setInterval(function(){
 const actions = {
   postTransaction (context, {amount, message}){
     axios.post(serverAd+'/transfer',{
-      params: {
         amount,
         message
-      }})
+      })
       .then(function(response){
         console.log(response)
       })

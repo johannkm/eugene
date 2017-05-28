@@ -11,9 +11,9 @@ var $NESSIE_API_KEY = "71ad9748b099a0d947b85535d9954611";
 var transactions = [];
 
 var app = express();
-var server = require('http').Server(app);
-
-server.listen(8080);
+// var server = require('http').Server(app);
+//
+// server.listen(8080);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
@@ -70,4 +70,4 @@ app.get('/balance', function(req, res) {
 
 app.listen(app.get('port'), function() {
   console.log('App is running on port', app.get('port'));
-});
+})
